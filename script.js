@@ -55,7 +55,7 @@ const gallerySectionImages = [
   { url: 'image1.jpeg', alt: 'Gallery section image 1' },
   { url: 'image2.jpeg', alt: 'Gallery section image 2' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/IMG-20260306-WA0014.jpg.jpeg', alt: 'IBM 1' },
-  { url: 'https://nct-bca.neocities.org/BCA%20images/IMG_20260222_164104.jpg.jpeg', alt: 'IBM 2' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/IBM.jpg.jpeg', alt: 'IBM 2' },
   { url: 'image3.jpeg', alt: 'Gallery section image 3' },
   { url: 'image4.jpeg', alt: 'Gallery section image 4' },
   { url: 'image5.jpeg', alt: 'Gallery section image 5' },
