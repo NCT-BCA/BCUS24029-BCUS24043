@@ -39,6 +39,10 @@ html, body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1924,14 +1928,76 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 640px) {
-  .logo-text { display: none; }
-  
   .hero-content {
     padding: 8rem 1rem 4rem;
   }
   
   .slide-overlay {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-content {
+    height: 4rem;
+  }
+
+  .logo-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .logo-section {
+    gap: 0.5rem;
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .logo-text h1 {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .autonomous {
+    display: none;
+  }
+
+  .logo-text p {
+    font-size: 0.65rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-actions {
+    flex-shrink: 0;
+  }
+
+  .btn-primary#registerBtn {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo-text h1 {
+    font-size: 0.95rem;
+  }
+
+  .logo-text p {
+    font-size: 0.75rem;
+  }
+
+  .logo-circle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .btn-primary#registerBtn {
+    display: none;
   }
 }
 .thumbnail-grid {
