@@ -234,6 +234,13 @@ function initMobileMenu() {
 // ============================================
 function initModal() {
   registerBtn.addEventListener('click', openModal);
+  const registerBtnMobile = document.getElementById('registerBtnMobile');
+  if (registerBtnMobile) registerBtnMobile.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    mobileMenuBtn.querySelector('.menu-icon').classList.remove('hidden');
+    mobileMenuBtn.querySelector('.close-icon').classList.add('hidden');
+    openModal();
+  });
   modalClose.addEventListener('click', closeModal);
   modalGotIt.addEventListener('click', closeModal);
   modalNotify.addEventListener('click', closeModal);
