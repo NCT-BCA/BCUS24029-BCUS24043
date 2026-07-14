@@ -42,24 +42,33 @@ const galleryGrid = document.getElementById('galleryGrid');
 // ============================================
 // Slideshow images (do not change unless you want to update the slideshow).
 const galleryImages = [
-  { url: 'image1.jpeg', alt: 'Gallery image 1' },
-  { url: 'image2.jpeg', alt: 'Gallery image 2' },
-  { url: 'image3.jpeg', alt: 'Gallery image 3' },
-  { url: 'image4.jpeg', alt: 'Gallery image 4' },
-  { url: 'image5.jpeg', alt: 'Gallery image 5' },
-  { url: 'image6.jpeg', alt: 'Gallery image 6' }
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image1.jpeg', alt: 'Gallery image 1' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/IMG-20260306-WA0014.jpg.jpeg', alt: 'Gallery image 2' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Professonal%20Photo%203.jpeg', alt: 'Gallery image 3' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Professonal%20Photo%2015.jpeg', alt: 'Gallery image 4' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/IBM.jpg.jpeg', alt: 'Gallery image 5' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image6.jpeg', alt: 'Gallery image 6' }
 ];
 
 // Separate gallery section images: add, remove, or update images here for the gallery cards below the slideshow.
 const gallerySectionImages = [
-  { url: 'image1.jpeg', alt: 'Gallery section image 1' },
-  { url: 'image2.jpeg', alt: 'Gallery section image 2' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image1.jpeg', alt: 'Gallery section image 1' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image2.jpeg', alt: 'Gallery section image 2' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class1.jpeg', alt: 'Course1' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class2.jpeg', alt: 'Course2' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class3.jpeg', alt: 'Course3' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class4.jpeg', alt: 'Course4' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class5.jpeg', alt: 'Course5' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/CLass6.jpeg', alt: 'Course6' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class7.jpeg', alt: 'Course7' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class8.jpeg', alt: 'Course8' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Class9.jpeg', alt: 'Course9' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/IMG-20260306-WA0014.jpg.jpeg', alt: 'IBM 1' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/IBM.jpg.jpeg', alt: 'IBM 2' },
-  { url: 'image3.jpeg', alt: 'Gallery section image 3' },
-  { url: 'image4.jpeg', alt: 'Gallery section image 4' },
-  { url: 'image5.jpeg', alt: 'Gallery section image 5' },
-  { url: 'image6.jpeg', alt: 'Gallery section image 6' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image3.jpeg', alt: 'Gallery section image 3' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image4.jpeg', alt: 'Gallery section image 4' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image5.jpeg', alt: 'Gallery section image 5' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/image6.jpeg', alt: 'Gallery section image 6' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/1%20Lab1.jpeg', alt: 'Gallery section image 7' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/1%20Lab2.jpeg', alt: 'Gallery section image 8' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/1694499007078.jpg', alt: 'Gallery section image 9' },
@@ -91,6 +100,19 @@ const gallerySectionImages = [
   { url: 'https://nct-bca.neocities.org/BCA%20images/Professonal%20Photo%205.jpeg', alt: 'Gallery section image 35' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/Professonal%20Photo%206.jpeg', alt: 'Gallery section image 36' },
   { url: 'https://nct-bca.neocities.org/BCA%20images/Professonal%20Photo%207.jpeg', alt: 'Gallery section image 37' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/2%20Lab2.jpeg', alt: 'Gallery section image 38' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/Teams2.jpeg', alt: 'Gallery section image 39' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/2image.jpeg', alt: 'Gallery section image 40' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/3image.jpeg', alt: 'Gallery section image 41' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/4image.jpeg', alt: 'Gallery section image 42' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/5image.jpeg', alt: 'Gallery section image 43' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/6image.jpeg', alt: 'Gallery section image 44' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/7image.jpeg', alt: 'Gallery section image 45' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/8image.jpeg', alt: 'Gallery section image 46' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/9image.jpeg', alt: 'Gallery section image 47' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/10image.jpeg', alt: 'Gallery section image 48' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/11image.jpeg', alt: 'Gallery section image 49' },
+  { url: 'https://nct-bca.neocities.org/BCA%20images/12image.jpeg', alt: 'Gallery section image 50' },
 ];
 
 const facultyData = [
@@ -288,9 +310,7 @@ function goToSlide(index) {
 function startSlideshow() {
   if (slideInterval) clearInterval(slideInterval);
   slideInterval = setInterval(() => {
-    if (activePage === 'gallery') {
-      goToSlide(currentSlide + 1);
-    }
+    goToSlide(currentSlide + 1);
   }, 5000);
 }
 
